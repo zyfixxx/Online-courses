@@ -1,0 +1,238 @@
+gi<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-курсы | Учись с нами</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth; /* Плавная прокрутка */
+        }
+
+        body {
+            background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1920') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* ====== Хедер ====== */
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            width: 100%;
+        }
+        .about {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s ease-in-out;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #ffcc00, #ff6600);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background: rgba(255, 204, 0, 0.7);
+        }
+
+        /* ====== Главный блок ====== */
+        .hero {
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            padding-top: 60px;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ffcc00, #ff6600);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ff6600;
+
+        }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ffcc00, #ff6600);
+            color: #0a0f23;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+        }
+
+        .cta-btn:hover {
+            background: linear-gradient(45deg, #ff6600, #ffcc00);
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        /* ====== Курсы ====== */
+        .courses-section {
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .courses-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .courses {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .course-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 30px;
+            padding: 30px;
+            max-width: 2520px;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .course-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ff6600;
+        }
+
+        .course-card p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .course-card .cta-btn {
+            background: #ff6600;
+            color: white;
+            display: block;
+            text-align: center;
+        }
+
+        /* ====== Футер ====== */
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Шапка с логотипом и меню -->
+    <header>
+        <div class="logo">MyCourses</div>
+        <nav>
+            <a href="#hero">Главная</a>
+            <a href="#courses">Курсы</a>
+            <a class="about" href="about.html">О нас</a>
+            <a href="#">Вход</a>
+            <a href="register.html">Регистрация</a>
+        </nav>
+        </div>
+        
+    </header>
+    <!-- Главный контент -->
+    <div id="hero" class="hero">
+        <h1>Изучи новые навыки с лучшими курсами</h1>
+        <p>Онлайн-платформа для обучения, сертификации и развития карьеры.</p>
+        <a href="#courses" class="cta-btn">Начать обучение</a>
+    </div>
+
+    <!-- Курсы -->
+    <div id="courses" class="courses-section">
+        <h2 class="courses-title">Наши курсы</h2>
+        <div class="courses">
+            <div class="course-card">
+                <h3>Веб-программирвоание PHP</h3>
+                <p>Изучите PHP, MYSQL, и создавайте сайты с нуля.</p>
+                <a href="#" class="cta-btn">Начать курс</a>
+            </div>
+            <div class="course-card">
+                <h3>Pyhton</h3>
+                <p>Научитесь разработке программного обеспечения, науке о данных.</p>
+                <a href="#" class="cta-btn">Начать курс</a>
+            </div>
+            <div class="course-card">
+                <h3>Веб-разработка</h3>
+                <p>Изучите HTML, CSS, JavaScript и создавайте сайты с нуля.</p>
+                <a href="#" class="cta-btn">Начать курс</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        © 2025 MyCourses. Все права защищены.
+    </footer>
+
+</body>
+</html>

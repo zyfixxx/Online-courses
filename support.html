@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связаться с администрацией</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #ffcc00, #ff6600);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .social-links {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-links a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ffcc00;
+            transform: scale(1.2);
+        }
+        .contact-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .contact-form button, .back-btn {
+            width: 100%;
+            padding: 12px;
+            background: #ffcc00;
+            border: none;
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .contact-form button:hover, .back-btn:hover {
+            background: #ff9900;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Связаться с администрацией</h1>
+    <p>Заполните форму, и мы вам ответим.</p>
+
+    <div class="contact-container">
+        <form class="contact-form" action="send_message.php" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш e-mail" required>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="contact-info">
+            <p>📞 Телефон: +380 (50)77-39-530</p>
+            <p>📧 E-mail: ignatenko.artem3421@gmail.com</p>
+            <p>🏢 Адрес: Одесса, ул. Лиманка, 3</p>
+        </div>
+
+        <div class="social-links">
+            <a href="#">🔵 Telegram</a>
+        </div>
+
+        <div>
+        <!-- Кнопка "Назад" -->
+        <button class="back-btn" onclick="window.location.href='about.html';">Вернуться назад</button>
+    </div>
+
+</body>
+</html>
+
